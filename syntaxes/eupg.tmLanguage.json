@@ -26,6 +26,17 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"entities": {
+			"patterns": [{
+				"name": "entity.name.function.eupg",
+				"match": "\\b(bot|myself|enemy|healthpack|elixir|allies|antimatter|board|allybase)\\b"
+			}]
+		},
+		"actions": {
+			"patterns": [{
+				"name"
+			}]
 		}
 	},
 	"scopeName": "main.eupg"
