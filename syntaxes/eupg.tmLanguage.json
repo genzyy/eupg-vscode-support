@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "EUPG",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.eupg",
+				"match": "\\b(strategy|if|and|or|let)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.eupg",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.eupg",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "main.eupg"
+}
