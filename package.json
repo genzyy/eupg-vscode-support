@@ -1,8 +1,8 @@
 {
   "name": "eupg",
-  "displayName": "EUPG",
+  "displayName": "EUPG Syntax highlighter",
   "description": "EUPG language support",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.75.0"
   },
