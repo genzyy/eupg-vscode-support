@@ -29,15 +29,28 @@
 		},
 		"entities": {
 			"patterns": [{
-				"name": "entity.name.function.eupg",
+				"name": "entity.name.class.eupg",
 				"match": "\\b(bot|myself|enemy|healthpack|elixir|allies|antimatter|board|allybase)\\b"
 			}]
 		},
 		"actions": {
 			"patterns": [{
-				"name"
+				"name": "entity.name.method.eupg",
+				"match": "\\b(moveAway)\\b"
+			}]
+		},
+		"metrics": {
+			"patterns": [{
+				"name": "entity.name.method.eupg",
+				"match": "\\b(Health|Closest|Farthest...)\\b"
+			}]
+		},
+		"properties": {
+			"patterns": [{
+				"name": "entity.name.method.eupg",
+				"match": "\\b(SpawnTime|Position)\\b"
 			}]
 		}
 	},
-	"scopeName": "main.eupg"
+	"scopeName": "better.eupg"
 }

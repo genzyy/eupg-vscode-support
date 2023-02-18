@@ -9,6 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./extension.js",
   "contributes": {
     "languages": [{
       "id": "eupg",
@@ -18,8 +19,14 @@
     }],
     "grammars": [{
       "language": "eupg",
-      "scopeName": "main.eupg",
+      "scopeName": "better.eupg",
       "path": "./syntaxes/eupg.tmLanguage.json"
-    }]
+    }],
+    "commands": [
+      {
+        "command": "eupg.EUPG",
+        "title": "EUPG"
+      }
+    ]
   }
 }
