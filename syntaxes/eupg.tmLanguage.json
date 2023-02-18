@@ -14,13 +14,35 @@
 			"patterns": [{
 				"name": "keyword.control.eupg",
 				"match": "\\b(if|and|or|let)\\b"
-			}]
-		},
-		"strategies": {
-			"patterns": [{
-				"name": "keyword.control.eupg",
-				"match": "\\b(strategy [A-Z]+)\\b"
-			}]
+			},
+			{
+				"name": "keyword.operator.new.eupg",
+				"match": "\\bstrategy ([A-Z]+)\\b",
+				"captures": {
+					"1": {
+						"name": "constant.language.eupg"
+					}
+				}
+			},
+			{
+				"name": "constant.character.eupg",
+				"match": "\\b([0-9]+)\\b",
+				"captures": {
+					"1": {
+						"name": "markup.changed.eupg"
+					}
+				}
+			},
+			{
+				"name": "variable.language.eupg",
+				"match": "\\b.([A-Za-z]+)()\\b",
+				"captures": {
+					"1": {
+						"name": "variable.language.eupg"
+					}
+				}
+			}
+		]
 		},
 		"strings": {
 			"name": "string.quoted.double.eupg",
@@ -36,7 +58,12 @@
 		"entities": {
 			"patterns": [{
 				"name": "entity.name.class.eupg",
-				"match": "\\b(bot|myself|enemy|healthpack|elixir|allies|antimatter|board|allybase)\\b"
+				"match": "\\b(bot|myself|enemy|healthpack|elixir|allies|antimatter|board|allybase)\\b",
+				"captures": {
+					"1": {
+						"name": "meta.preprocessor.eupg"
+					}
+				}
 			}]
 		},
 		"actions": {
