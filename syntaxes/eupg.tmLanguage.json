@@ -13,7 +13,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.eupg",
-				"match": "\\b(strategy|if|and|or|let)\\b"
+				"match": "\\b(if|and|or|let)\\b"
+			}]
+		},
+		"strategies": {
+			"patterns": [{
+				"name": "keyword.control.eupg",
+				"match": "\\b(strategy [A-Z]+)\\b"
 			}]
 		},
 		"strings": {
