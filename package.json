@@ -1,5 +1,5 @@
 {
-  "name": "eupg",
+  "name": "eupg-syntax-highlighting",
   "displayName": "EUPG Syntax highlighter",
   "description": "EUPG language support",
   "version": "1.0.0",
@@ -31,5 +31,6 @@
   },
   "repository": {
     "url": "https://github.com/genzyy/eupg-vscode-support"
-  }
+  },
+  "publisher": "genzyy"
 }
