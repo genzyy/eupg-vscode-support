@@ -28,5 +28,8 @@
         "title": "EUPG"
       }
     ]
+  },
+  "repository": {
+    "url": "https://github.com/genzyy/eupg-vscode-support"
   }
 }
