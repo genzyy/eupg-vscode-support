@@ -28,6 +28,10 @@
 				"match": "\\b.(Health|Closest|Farthest|IsAntiMatterCount|InMediumRange|InShortRange|IsHealth|IsClass|Blocks)\\b"
 			},
 			{
+				"name": "keyword.other.unit.eupg",
+				"match": "\\b(bot|myself|enemy|healthpack|elixir|allies|antimatter|board|allybase)\\b"
+			},
+			{
 				"name": "keyword.operator.new.eupg",
 				"match": "\\bstrategy ([A-Z]+)\\b",
 				"captures": {
