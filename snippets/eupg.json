@@ -1,0 +1,12 @@
+{
+    ".source.eupg": {
+        "strategy": {
+            "prefix": ["strat", "strategy"],
+            "body": "strategy ${1:Name}::{\n\t$0\n}"
+        },
+        "var": {
+            "prefix": ["let"],
+            "body": "let ${1:Name} = ${2:Value}"
+        }
+    }
+}
