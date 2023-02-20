@@ -22,6 +22,12 @@
       "scopeName": "better.eupg",
       "path": "./syntaxes/eupg.tmLanguage.json"
     }],
+    "snippets": [
+      {
+        "language": "eupg",
+        "path": "./snippets/eupg.json"
+      }
+    ],
     "commands": [
       {
         "command": "eupg.EUPG",
