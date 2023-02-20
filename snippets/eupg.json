@@ -7,6 +7,10 @@
         "var": {
             "prefix": ["let"],
             "body": "let ${1:Name} = ${2:Value}"
+        },
+        "if statement": {
+            "prefix": ["if"],
+            "body": "if ${1:Condition} {\n\n\n}"
         }
     }
 }
